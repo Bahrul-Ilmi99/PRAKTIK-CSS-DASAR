@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Combinator Selector</title>
+        <style>
+            div p {
+                color:red;
+            }
+            div > p {
+                background-color: yellow;
+
+            }
+            div + p {
+                background-color:darkgray;
+            }
+            div ~ p {
+                color: cyan;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>This is an paragraph, div p berarti semua dalam div terpengaruh efek style </p>
+            <p>This is an paragraph, di > p berarti  Semua p yang langsung berada di dalam div mempunyai efek seperti parent</p>
+        </div>
+        <p>This is an paragraph, div + p  yaitu Efeknya Paragraf p yang langsung mengikuti div akan memiliki background darkgray.</p>
+        <p>This is an paragraph, div ~ p   yaitu Efeknya Semua paragraf p yang setara dengan div dan muncul setelahnya akan memiliki teks warna cyan. </p>
+</html>
