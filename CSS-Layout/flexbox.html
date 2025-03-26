@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Flexbox</title>
+        <style>
+            .wadah_flex {
+                display: flex;
+                background-color: black;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+            .wadah_flex div {
+                background-color:white;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wadah_flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div> 
+            <div>5</div> 
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <p><b>Pada sekenario 2:</b> mengatur background-color, margin, padding, dan font-size pada elemen div di dalam wadah_flex.</p>
+        <p><b>Pada sekenario 3:</b> menambahkan flex-direction pada wadah_flex untuk mengatur arah penyusunan elemen-elemen di dalam kontainer flex.</p>
+        <p><b>Pada sekenario 4 :</b> mengganti flex-direction menjadi flex-warp digunakan untuk menentukan apakah elemen-elemen dalam kontainer flex harus
+            dibungkus ke baris atau kolom baru jika ruang dalam kontainer tidak cukup untuk menampungnya dalam satu baris atau kolom.</p>
+        <p><b>Pada sekenario 5:</b> mengganti flex-warp menjadi flex-flow untuk menggabungkan flex-direction dan flex-wrap.
+            memberikan fleksibilitas dalam penataan elemen-elemen di dalam kontainer flex.</p>
+        <p><b>Pada sekenario 6 :</b>mengganti flex-flow menjadi justify-content. 
+            justify-content digunakan untuk mengatur posisi elemen di dalam wadah flex.
+             Ada beberapa nilai yang bisa digunakan, antara lain: flex-start (elemen akan berada di sisi kiri wadah flex), 
+             flex-end (elemen akan berada di sisi kanan wadah flex), center (elemen akan berada di tengah wadah flex), 
+             space-around (elemen akan berada di sekitar wadah flex dengan jarak yang sama), 
+             space-between (elemen akan berada di antara wadah flex dengan jarak yang sama), 
+             spacer-evenly (Elemen tersebar merata dengan jarak yang benar-benar sama di antara elemen dan di kedua ujung.).</p>
+    </body>
+</html>
